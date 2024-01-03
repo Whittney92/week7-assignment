@@ -41,8 +41,8 @@ concatenatedNames += names [i] + ' ';
 console.log (concatenatedNames)
 
 //Question 3:
-console.log(ages[ages.length - 1]); //to access the last element of the array, "ages.lemgth -1"
-//always refrence the las element.
+console.log(ages[ages.length - 1]); //to access the last element of the array, "ages.length -1"
+//always refrence the last element.
 
 //Question 4:
 console.log("First element of ages array:", ages[0]); //zero is always the first element of any array.
@@ -81,7 +81,7 @@ function fullName(firstName, lastName){
     let fullName = firstName + ' ' + lastName;
     console.log(fullName);
 }
-fullName("Matthew", "Cox");
+fullName("Whittney", "Rudolph");
 
 //Question 9:
 let numbers1 = [100,200,300,400]
@@ -119,7 +119,9 @@ function calculateNumbersAverage(array) {
 }
 calculateNumbersAverage(numbers1);
 
-//Question 11:
+//Question 11: I created a function that takes two arrays of numbers
+//to return to true.The first array is greater than the average of the elements
+//in the second array. 
 let numbers3 = [100, 100, 50];
 let numbers4 = [100, 100, 101];
 
@@ -152,7 +154,9 @@ function twoAverages(array1, array2) {
 }
 twoAverages(numbers3, numbers4);
 
-//Question 12:
+//Question 12:I created a funtion called "willBuyDrink" that takes a boolean
+//isHotOutside, and a number moneyInPocket, and returns true if it is hot outside
+//or if moneyInPocket is greater than 10.50.
 function willBuyDrink(isHotOutside, moneyInPocket) {
     console.log ("Parameters", isHotOutside, moneyInPocket);
     let buyDrink = isHotOutside === true && moneyInPocket > 10.5;
